@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the original Mamba paper for the architecture and this repository for this NumPy implementation."
+title: "Mamba NumPy: Selective State Spaces from Scratch"
+type: software
+version: 1.0.0
+date-released: 2026-10-24
+license: MIT
+authors:
+  - family-names: Firoozbakht
+    given-names: Matin
+    affiliation: "Shahid Beheshti University; Institute for Research in Fundamental Sciences"
+preferred-citation:
+  type: article
+  title: "Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
+  authors:
+    - family-names: Gu
+      given-names: Albert
+    - family-names: Dao
+      given-names: Tri
+  year: 2023
+  doi: 10.48550/arXiv.2312.00752

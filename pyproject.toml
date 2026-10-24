@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mamba-numpy"
+version = "1.0.0"
+description = "Mamba-1 from scratch in NumPy: manual backprop, training, and recurrent generation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Matin Firoozbakht"}]
+dependencies = ["numpy>=1.24"]
+keywords = ["mamba", "numpy", "state-space-model", "deep-learning", "from-scratch"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+mamba-numpy = "mamba_numpy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mamba_numpy*"]
