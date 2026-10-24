@@ -1,0 +1,13 @@
+{
+  "seed": 20261023,
+  "batches": 16,
+  "n_values": 4,
+  "chance_if_selecting_uniformly_among_values": 0.25,
+  "training_delay_range": [
+    4,
+    9
+  ],
+  "max_local_receptive_field_tokens": 7,
+  "ablation": "zeros C-projection columns in every trained block; no retraining",
+  "scope": "small procedural task; one training seed; not the original Mamba copy benchmark"
+}
