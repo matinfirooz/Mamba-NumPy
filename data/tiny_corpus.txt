@@ -1,0 +1,87 @@
+mamba reads a stream one token at a time.
+the state carries a memory of the past.
+a small gate decides what to keep and what to forget.
+we build the model with arrays and careful equations.
+the input writes a message into a quiet state.
+the output reads the message when it is needed.
+some words matter and some words are only noise.
+a selective model learns the difference from examples.
+the convolution sees a short window of nearby tokens.
+the recurrent state carries information across a longer distance.
+there is no attention matrix in this little model.
+every gradient is written by hand using numpy.
+the optimizer takes a small step toward a lower loss.
+we test the derivatives before we trust the training.
+one sequence can be split into many pieces.
+if we carry the state, the pieces tell the same story.
+the size of the state stays fixed as the story grows.
+a seed makes our experiment repeatable.
+we save the weights and the moments of the optimizer.
+we can stop a run and continue with the same random stream.
+matin studies models that use less memory and less energy.
+a good experiment begins with a clear question.
+a useful result comes with code that another person can run.
+small models make the hidden details easier to see.
+the numbers in a table should come from a real measurement.
+we compare two paths and check that their outputs agree.
+the stream moves forward and the gradient moves backward.
+stable exponentials keep the recurrence under control.
+positive time steps determine how quickly the memory fades.
+the write vector and the read vector depend on the current input.
+each channel has a small collection of state values.
+many simple pieces can form a deep learning system.
+the purpose of this corpus is to teach a small character model.
+it is not a collection of world knowledge or a chat assistant.
+we read the code slowly, then change one part and observe the result.
+understanding grows when an equation becomes a working program.
+
+on a quiet morning, a student opens a notebook.
+the page contains a stream of symbols and a little box named memory.
+each new symbol changes the box in a small and precise way.
+the student asks the program to remember a red signal.
+many blue signals pass before a question arrives.
+the state keeps the useful signal and ignores the others.
+the answer appears when the read vector opens the memory.
+at first the answers are poor and the loss is high.
+with every update the gates become a little more useful.
+the student checks a numerical derivative against an analytic derivative.
+when the two agree, training can begin with more confidence.
+the program is short enough to inspect and complete enough to train.
+the story is about learning how the machine works.
+
+mamba reads a stream one token at a time.
+the state carries a memory of the past.
+a small gate decides what to keep and what to forget.
+we build the model with arrays and careful equations.
+the input writes a message into a quiet state.
+the output reads the message when it is needed.
+some words matter and some words are only noise.
+a selective model learns the difference from examples.
+the convolution sees a short window of nearby tokens.
+the recurrent state carries information across a longer distance.
+there is no attention matrix in this little model.
+every gradient is written by hand using numpy.
+the optimizer takes a small step toward a lower loss.
+we test the derivatives before we trust the training.
+one sequence can be split into many pieces.
+if we carry the state, the pieces tell the same story.
+the size of the state stays fixed as the story grows.
+a seed makes our experiment repeatable.
+we save the weights and the moments of the optimizer.
+we can stop a run and continue with the same random stream.
+matin studies models that use less memory and less energy.
+a good experiment begins with a clear question.
+a useful result comes with code that another person can run.
+small models make the hidden details easier to see.
+the numbers in a table should come from a real measurement.
+we compare two paths and check that their outputs agree.
+the stream moves forward and the gradient moves backward.
+stable exponentials keep the recurrence under control.
+positive time steps determine how quickly the memory fades.
+the write vector and the read vector depend on the current input.
+each channel has a small collection of state values.
+many simple pieces can form a deep learning system.
+the purpose of this corpus is to teach a small character model.
+it is not a collection of world knowledge or a chat assistant.
+we read the code slowly, then change one part and observe the result.
+understanding grows when an equation becomes a working program.
