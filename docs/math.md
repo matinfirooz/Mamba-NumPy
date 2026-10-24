@@ -35,7 +35,7 @@ The actual scan function uses the conventional arguments `A, B, C, D`.
    `B_t`, and `C_t`. The same `B_t/C_t` vectors are shared across channels.
 4. Expand the `R` time-step features to `E` channels and apply softplus:
 
-   $$\Delta_t=\operatorname{softplus}(r_t W_\Delta+b_\Delta),\quad A=-\exp(A_{\log}).$$
+   $$\Delta_t=\mathrm{softplus}(r_t W_\Delta+b_\Delta),\quad A=-\exp(A_{\log}).$$
 
 5. Update and read the state:
 
@@ -80,7 +80,7 @@ finite differences.
 
 For RMSNorm, with `q=(mean(x²)+eps)^(-1/2)` and `g=grad_y*weight`:
 
-$$g_x=gq-xq^3\operatorname{mean}(gx).$$
+$$g_x=gq-xq^3\,\mathrm{mean}(gx).$$
 
 The remaining operations use ordinary matrix, convolution, SiLU, residual,
 embedding scatter-add, and cross-entropy derivatives. Start at
