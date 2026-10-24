@@ -1,0 +1,45 @@
+{
+  "model_config": {
+    "vocab_size": 10,
+    "d_model": 32,
+    "n_layers": 2,
+    "d_state": 8,
+    "d_conv": 4,
+    "expand": 2,
+    "dt_rank": 2,
+    "dt_min": 0.001,
+    "dt_max": 0.1,
+    "norm_eps": 1e-05,
+    "tie_embeddings": true,
+    "dtype": "float32",
+    "seed": 42
+  },
+  "train_config": {
+    "task": "recall",
+    "steps": 600,
+    "batch_size": 16,
+    "seq_len": 32,
+    "lr": 0.003,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "warmup": 10,
+    "log_every": 100,
+    "save_every": 200,
+    "eval_batches": 4,
+    "seed": 42,
+    "val_fraction": 0.15,
+    "n_values": 4,
+    "min_delay": 4,
+    "max_delay": 9
+  },
+  "data_path": null,
+  "data_sha256": null,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "processor": "x86_64"
+  },
+  "parameters": 17184,
+  "resume_from": null
+}

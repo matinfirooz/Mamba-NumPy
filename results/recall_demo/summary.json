@@ -1,0 +1,12 @@
+{
+  "task": "recall",
+  "step": 600,
+  "parameters": 17184,
+  "validation": {
+    "loss": 0.0003955598972995818,
+    "accuracy": 1.0,
+    "tokens": 231
+  },
+  "train_seconds": 95.93058995800129,
+  "state_bytes_per_sequence": 5632
+}
