@@ -1,0 +1,11 @@
+{
+  "d_model": 32,
+  "n_layers": 2,
+  "d_state": 8,
+  "d_conv": 4,
+  "expand": 2,
+  "dt_rank": 2,
+  "dtype": "float32",
+  "tie_embeddings": true,
+  "seed": 42
+}
