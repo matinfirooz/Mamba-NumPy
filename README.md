@@ -122,10 +122,19 @@ Existing runs are protected against accidental fresh-training overwrites.
 
 For each expanded channel `e` and state component `n`:
 
-$$A=-\exp(A_{\log}),\qquad \Delta_t=\operatorname{softplus}(W_\Delta r_t+b_\Delta),$$
-$$h_{t,e,n}=\exp(\Delta_{t,e}A_{e,n})h_{t-1,e,n}
-+\Delta_{t,e}B_{t,n}u_{t,e},$$
-$$y_{t,e}=\sum_n C_{t,n}h_{t,e,n}+D_e u_{t,e}.$$
+$$
+A=-\exp(A_{\log}),\qquad
+\Delta_t=\mathrm{softplus}(W_\Delta r_t+b_\Delta)
+$$
+
+$$
+h_{t,e,n}=\exp(\Delta_{t,e}A_{e,n})h_{t-1,e,n}
++\Delta_{t,e}B_{t,n}u_{t,e}
+$$
+
+$$
+y_{t,e}=\sum_n C_{t,n}h_{t,e,n}+D_e u_{t,e}
+$$
 
 The readout is multiplied by `SiLU(z)` and projected back to model width.
 `B_t`, `C_t`, and `Δ_t` depend on the current convolution output. The input
