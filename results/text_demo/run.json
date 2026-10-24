@@ -1,0 +1,45 @@
+{
+  "model_config": {
+    "vocab_size": 30,
+    "d_model": 32,
+    "n_layers": 2,
+    "d_state": 8,
+    "d_conv": 4,
+    "expand": 2,
+    "dt_rank": 2,
+    "dt_min": 0.001,
+    "dt_max": 0.1,
+    "norm_eps": 1e-05,
+    "tie_embeddings": true,
+    "dtype": "float32",
+    "seed": 42
+  },
+  "train_config": {
+    "task": "text",
+    "steps": 600,
+    "batch_size": 8,
+    "seq_len": 48,
+    "lr": 0.003,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "warmup": 10,
+    "log_every": 50,
+    "save_every": 100,
+    "eval_batches": 4,
+    "seed": 42,
+    "val_fraction": 0.15,
+    "n_values": 4,
+    "min_delay": 4,
+    "max_delay": 9
+  },
+  "data_path": "data/tiny_corpus.txt",
+  "data_sha256": "7ae937e9cc2828304a1b0381755af2a808393dde213d4fe726a2db0e864646f7",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "processor": "x86_64"
+  },
+  "parameters": 17824,
+  "resume_from": "results/text_demo/last.npz (300-update intermediate checkpoint)"
+}

@@ -1,0 +1,13 @@
+{
+  "task": "text",
+  "step": 600,
+  "parameters": 17824,
+  "validation": {
+    "loss": 0.45592260591215944,
+    "accuracy": 0.8795572916666666,
+    "tokens": 1536,
+    "perplexity": 1.5776282409428226
+  },
+  "train_seconds": 106.36502954699972,
+  "state_bytes_per_sequence": 5632
+}
