@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "unit_tests": 32,
+  "failures": 0,
+  "errors": 0,
+  "gradient_coordinates": 165,
+  "max_gradient_absolute_error": 4.398656994197836e-10,
+  "example_cli_commands": 7,
+  "all_documentation_links_resolve": true,
+  "trace_recurrence_reproduced": true,
+  "text_checkpoint_metrics_reproduced": true,
+  "recall_checkpoint_metrics_reproduced": true,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "date": "2026-10-24",
+  "scope": "local CPU checks; hosted GitHub CI has not run"
+}

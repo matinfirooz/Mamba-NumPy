@@ -1,0 +1,45 @@
+test_corrupt_checkpoint_is_rejected (test_mamba.CheckpointTests.test_corrupt_checkpoint_is_rejected) ... ok
+test_roundtrip_and_exact_optimizer_resume (test_mamba.CheckpointTests.test_roundtrip_and_exact_optimizer_resume) ... ok
+test_training_resume_matches_uninterrupted_training (test_mamba.CheckpointTests.test_training_resume_matches_uninterrupted_training) ... recall: 504 parameters | float64 | state 576 bytes / sequence
+step     0 | train 2.6513 | val 2.5683 | val acc 0.0% | 0.0s
+step     4 | train 2.6368 | val 2.5496 | val acc 0.0% | 0.0s
+recall: 504 parameters | float64 | state 576 bytes / sequence
+step     0 | train 2.6513 | val 2.5683 | val acc 0.0% | 0.0s
+step     2 | train 2.6479 | val 2.5639 | val acc 0.0% | 0.0s
+recall: 504 parameters | float64 | state 576 bytes / sequence
+step     4 | train 2.6368 | val 2.5496 | val acc 0.0% | 0.0s
+ok
+test_config_validation (test_mamba.DataAndSamplingTests.test_config_validation) ... ok
+test_generation_length_seed_and_zero_tokens (test_mamba.DataAndSamplingTests.test_generation_length_seed_and_zero_tokens) ... ok
+test_numpy_only_runtime_imports (test_mamba.DataAndSamplingTests.test_numpy_only_runtime_imports) ... ok
+test_recall_targets_match_last_write (test_mamba.DataAndSamplingTests.test_recall_targets_match_last_write) ... ok
+test_sampling_filters_and_determinism (test_mamba.DataAndSamplingTests.test_sampling_filters_and_determinism) ... ok
+test_text_shift_and_minimum_corpus (test_mamba.DataAndSamplingTests.test_text_shift_and_minimum_corpus) ... ok
+test_tokenizer_is_fit_only_on_train_text (test_mamba.DataAndSamplingTests.test_tokenizer_is_fit_only_on_train_text) ... ok
+test_unicode_tokenizer (test_mamba.DataAndSamplingTests.test_unicode_tokenizer) ... ok
+test_all_parameter_and_scan_gradients (test_mamba.ModelTests.test_all_parameter_and_scan_gradients) ... ok
+test_backward_cache_lifecycle (test_mamba.ModelTests.test_backward_cache_lifecycle) ... ok
+test_causality (test_mamba.ModelTests.test_causality) ... ok
+test_full_step_chunk_and_parallel_agree (test_mamba.ModelTests.test_full_step_chunk_and_parallel_agree) ... ok
+test_inference_does_not_overwrite_training_cache (test_mamba.ModelTests.test_inference_does_not_overwrite_training_cache) ... ok
+test_input_validation (test_mamba.ModelTests.test_input_validation) ... ok
+test_loss_decreases_on_fixed_training_batch (test_mamba.ModelTests.test_loss_decreases_on_fixed_training_batch) ... ok
+test_state_copy_is_independent (test_mamba.ModelTests.test_state_copy_is_independent) ... ok
+test_streaming_float32 (test_mamba.ModelTests.test_streaming_float32) ... ok
+test_tied_parameter_is_counted_once (test_mamba.ModelTests.test_tied_parameter_is_counted_once) ... ok
+test_untied_head_gradient (test_mamba.ModelTests.test_untied_head_gradient) ... ok
+test_adamw_and_no_decay (test_mamba.PrimitiveTests.test_adamw_and_no_decay) ... ok
+test_clipping_and_nonfinite_optimizer_guard (test_mamba.PrimitiveTests.test_clipping_and_nonfinite_optimizer_guard) ... ok
+test_convolution_tap_order (test_mamba.PrimitiveTests.test_convolution_tap_order) ... ok
+test_masked_loss_and_gradient (test_mamba.PrimitiveTests.test_masked_loss_and_gradient) ... ok
+test_stable_activations_and_cross_entropy (test_mamba.PrimitiveTests.test_stable_activations_and_cross_entropy) ... ok
+test_chunk_continuation_with_nonzero_state (test_mamba.ScanTests.test_chunk_continuation_with_nonzero_state) ... ok
+test_invalid_shapes_and_mode (test_mamba.ScanTests.test_invalid_shapes_and_mode) ... ok
+test_parallel_backward_matches_sequential (test_mamba.ScanTests.test_parallel_backward_matches_sequential) ... ok
+test_parallel_matches_recurrence (test_mamba.ScanTests.test_parallel_matches_recurrence) ... ok
+test_scalar_recurrence_by_hand (test_mamba.ScanTests.test_scalar_recurrence_by_hand) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.524s
+
+OK
