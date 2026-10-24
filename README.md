@@ -15,7 +15,6 @@ recurrent text generation, and experiments you can inspect. No deep learning
 framework, autograd engine, downloaded model, or GPU is required.
 
 **Author:** [Matin Firoozbakht](https://github.com/matinfirooz)  
-**Suggested repository name:** `mamba-numpy`
 
 The purpose is to make every part of Mamba visible: the selective state update,
 its derivatives, and the exact state carried between tokens. The repository
